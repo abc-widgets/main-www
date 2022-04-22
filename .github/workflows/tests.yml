@@ -14,13 +14,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 16
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@iwsllc'
+          scope: '@abc-widgets'
       - name: Install dependencies
         run: npm ci
         env:
           # NOTE: We're using the org's secret here for inter-repository access.
-          NODE_AUTH_TOKEN: ${{ secrets.DEMO_GH_ACTION_READ_PACKAGE }}
+          NODE_AUTH_TOKEN: ${{ secrets.GH_REGISTRY_PACKAGES }}
       - name: Run tests
         run: npm test

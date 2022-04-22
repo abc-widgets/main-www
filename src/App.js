@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { secretLongRunningFunction } from '@iwsllc/secret-math-funcs'
+import { secretLongRunningFunction } from '@abc-widgets/secret-math-funcs'
 import Spinner from './spinner'
 import './App.css';
 
