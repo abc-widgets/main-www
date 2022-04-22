@@ -6,8 +6,19 @@ Blog Post: https://iws.io/2022/github-actions-repositories-sharing-private-packa
 
 ## Build and run (locally)
 
- 1. Be sure and clone both repositories adjacent to each other `secret-math-funcs` and `main-www`
- 1. `npm install` (both projects)
+Clone [`secret-math-funcs`](https://github.com/abc-widgets/secret-math-funcs) and open terminal to its directory.
+ 1. `npm install`
  1. `npm run build` in secret-math-funcs
- 1. `npm run link` here. (Since you don't have a PAC, you'll want to link the source)
- 1. `npm start` here.
+
+
+Clone (this) project and open a terminal to its root.
+ 1. `npm install` (If this fails, see below)
+ 1. `npm run link` (local script that links up the local version of the library).
+ 1. `npm start`
+
+
+When `npm install` fails for `main-www` because you don't have GitHub Package Registry access. (The real solution is setup a PAC and authenticate; see my blog post above). But you can also: 
+ 1. `npm r @abc-widgets/secret-math-funcs` Removing the ref to the package
+ 1. `npm ci` Install everything else.
+ 1. `npm run link`
+ 1. `npm start`
