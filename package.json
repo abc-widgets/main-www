@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "link": "npm-run-all -s link:*",
     "link:secret-math-funcs-self": "cd ../secret-math-funcs && npm link",
-    "link:secret-math-funcs": "npm link @iwsllc/secret-math-funcs"
+    "link:secret-math-funcs": "npm link @abc-widgets/secret-math-funcs"
   },
   "eslintConfig": {
     "extends": [
