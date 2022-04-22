@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event'
-import * as mathFuncs from '@abc-widgets/secret-math-funcs'
+import * as mathFuncs from '@iwsllc/secret-math-funcs'
 import App from './App';
 
 test('should behave properly when clicking button', async () => {
